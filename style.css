@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+.japanese-pattern {
+    background-color: #f9f6f2;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ddd6c9' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 20L20 0L40 20L20 40z' /%3E%3C/g%3E%3C/svg%3E");
+}
+.bg-cherry {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.bg-fuji {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.bg-kyoto {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.bg-tokyo {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.japanese-border {
+    border: 2px solid #e0e0e0;
+    position: relative;
+}
+.japanese-border::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #afa698;
+    pointer-events: none;
+}
+.accent-color {
+    color: #D81B60;
+}
+.section-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40%;
+    height: 3px;
+    background-color: #D81B60;
+}
+.gallery-img {
+    transition: all 0.3s ease;
+}
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #D81B60;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
